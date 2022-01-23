@@ -1,0 +1,31 @@
+{
+  "name": "apiary-manager",
+  "version": "1.0.0",
+  "description": "Web application that lets beekeepers easily manage their hives.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharyjbaldwin/apiary-manager.git"
+  },
+  "author": "Zachary Baldwin (zacharyjbaldwin@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zacharyjbaldwin/apiary-manager/issues"
+  },
+  "homepage": "https://github.com/zacharyjbaldwin/apiary-manager#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.3.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
