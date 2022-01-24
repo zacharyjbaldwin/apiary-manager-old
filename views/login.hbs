@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {{> imports_css}}
+    </head>
+    <body>
+        {{> navbar}}
+
+        <div class="container">
+            <div class="row">
+                <div class="col s0 m3 l4"></div>
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        
+                        {{#if message}}
+                            <div class="center">
+                                {{!-- <br> --}}
+                                <p class="error-message">{{message}}</p>
+                            </div>
+                        {{/if}}
+                        
+                        <h4 class="center">Login</h4>
+
+                        <form action="/login" method="post" class="col s12">
+                            <div class="input-field col s12">
+                                {{!-- <i class="material-icons prefix">email</i> --}}
+                                <input placeholder="me@example.com" id="email_address" type="email" class="validate">
+                                <label for="email_address" class="active">Email address</label>
+                            </div>
+                            <br>
+                            <div class="input-field col s12">
+                                {{!-- <i class="material-icons prefix">password</i> --}}
+                                <input placeholder="Password" id="password" type="password" class="">
+                                <label for="password" class="active">Password</label>
+                            </div>
+                            <br>
+                            <div class="center">
+                                <button class="submit-button btn grey darken-3 center" type="submit" name="action">Submit</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+                <div class="col s0 m3 l4"></div>
+            </div>
+        </div>
+
+        {{> imports_js}}
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                M.updateTextFields();
+            });
+        </script>
+    </body>
+</html>
