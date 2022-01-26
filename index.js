@@ -35,7 +35,7 @@ app.use('/node_modules', express.static(path.join(__dirname, 'node_modules'))); 
 app.use('/', routes);
 
 app.use((req, res) => {
-    res.send('That\'s an problem.');
+    res.send('That\'s a problem.');
 });
 
 app.listen(config.port, () => {
